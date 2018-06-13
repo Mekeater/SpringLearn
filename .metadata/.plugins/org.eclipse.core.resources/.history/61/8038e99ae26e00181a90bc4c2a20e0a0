@@ -1,0 +1,9 @@
+package com.AOPByaspectj;
+
+public class Logging {
+	private void selectAll(){}
+	public void beforeAdvice(){
+	      System.out.println("Going to setup student profile.");
+	   }
+	
+}

@@ -1,0 +1,13 @@
+package com.DICollection;
+
+import java.awt.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+public class JavaCollection {
+	List adderssList;
+	Set  addressSet;
+	Map  addressMap;
+	Properties addressProperties;
+}

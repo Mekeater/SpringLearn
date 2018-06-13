@@ -1,0 +1,6 @@
+package com.AnnotationForAutowired;
+
+public class TextEditor {
+	private SpellChecker spellChecker;
+	
+}

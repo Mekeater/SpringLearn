@@ -1,0 +1,12 @@
+package com.SpringAboutDefinedEvent;
+
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+
+public class CustomEventHandler implements ApplicationListener<ApplicationEvent> {
+
+	public void onApplicationEvent(CustomEvent event) {
+	      System.out.println(event.toString());
+	   }
+
+}

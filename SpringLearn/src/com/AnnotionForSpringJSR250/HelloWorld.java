@@ -1,0 +1,35 @@
+package com.AnnotionForSpringJSR250;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
+
+public class HelloWorld {
+	   private String message;
+	   public void setMessage(String message){
+	      this.message  = message;
+	   }
+	   public String getMessage(){
+	      System.out.println("Your Message : " + message);
+	      return message;	
+	   }
+	   @PostConstruct
+	   public void init(){
+		      System.out.println("Bean is going through init.");
+		   }
+	   @PreDestroy
+	   public void destroy(){
+		      System.out.println("Bean will destroy now.");
+		   }
+    public Test test;
+	public Test getTest() {
+		return test;
+	}
+    @Resource(name="test")
+	public void setTest(Test test) {
+		this.test = test;
+	}
+	public void test() {
+		   test.printTest();
+	}
+}

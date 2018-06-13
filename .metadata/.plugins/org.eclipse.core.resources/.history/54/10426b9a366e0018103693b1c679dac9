@@ -1,0 +1,16 @@
+package com.SpringAboutDefinedEvent;
+
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.ApplicationEventPublisherAware;
+
+public class CustomEventPublisher implements ApplicationEventPublisherAware {
+
+	ApplicationEventPublisher publisher;
+
+	public void setPublisher(ApplicationEventPublisher publisher) {
+		this.publisher = publisher;
+	}
+	
+	
+	
+}

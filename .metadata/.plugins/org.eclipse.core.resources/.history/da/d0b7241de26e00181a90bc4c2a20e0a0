@@ -1,0 +1,5 @@
+package com.AspectJByAspectJ;
+
+public class Logging {
+
+}

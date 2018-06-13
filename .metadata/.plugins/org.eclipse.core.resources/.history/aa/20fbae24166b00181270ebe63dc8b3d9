@@ -1,0 +1,6 @@
+package com.DIBySetValue;
+
+public class TextEditor {
+	 private SpellChecker spellChecker;
+	 
+}

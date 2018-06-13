@@ -1,0 +1,13 @@
+package com.SpringAboutEventHandler;
+
+import org.springframework.context.ApplicationListener;
+
+public class CStopEventHandler implements ApplicationListener<ContextStoppedEvent> {
+
+	@Override
+	public void onApplicationEvent(CStopEventHandler arg0) {
+		// TODO Auto-generated method stub
+		System.out.println("ContextStoppedEvent Received");
+	}
+
+}

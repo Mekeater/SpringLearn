@@ -1,0 +1,18 @@
+package com.tutorialspoint;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("resource")
+		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("Beans1.xml");
+		HelloWorld obj1=(HelloWorld)applicationContext.getBean("helloWorld");
+		obj1.setMessage("shy message one");
+		obj1.getMessage();
+		ApplicationContext context=new ClassPathXmlApplicationContext("Beans1.xml");
+		HelloWorld obj2=(HelloWorld)context.getBean("Beans1.xml");
+		obj2.getMessage();
+	}
+}

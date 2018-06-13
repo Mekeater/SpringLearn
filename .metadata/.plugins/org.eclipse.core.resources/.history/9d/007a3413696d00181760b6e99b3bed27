@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="javaCollection" class="com.DICollection.JavaCollection">
+    	<property name="addressList">
+    		<list>
+    			<value>sun1</value>
+    			<value>sun2</value>
+    			<value>sun3</value>
+    			<value>sun4</value>
+    			<value>sun5</value>
+    			<value>sun6</value>
+    		</list>
+    	</property>
+    	
+    	<property name="addressSet">
+    		<set>
+    			<value>sun1</value>
+    			<value>sun2</value>
+    			<value>sun3</value>
+    			<value>sun4</value>
+    			<value>sun5</value>
+    			<value>sun6</value>
+    		</set>
+    	</property>
+    	
+    	<property name="addressMap">
+    		<map>
+    			<entry key="1" value="sun1"></entry>
+    			<entry key="2" value="sun2"></entry>
+    			<entry key="3" value="sun3"></entry>
+    			<entry key="4" value="sun4"></entry>
+    			<entry key="5" value="sun5"></entry>
+    			<entry key="6" value="sun6"></entry>
+    		</map>
+    	</property>
+    	
+    </bean>
+    
+</beans>
