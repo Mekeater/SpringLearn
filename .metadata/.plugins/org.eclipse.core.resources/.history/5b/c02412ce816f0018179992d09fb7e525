@@ -1,0 +1,6 @@
+package com.SpringJDBC;
+
+//DAO接口的实现层
+public class StudentJDBCTemplate {
+
+}
